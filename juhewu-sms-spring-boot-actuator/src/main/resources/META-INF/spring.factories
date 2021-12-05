@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.juhewu.sms.spring.boot.actuator.SmsActuatorAutoConfiguration 

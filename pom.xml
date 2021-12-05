@@ -6,12 +6,13 @@
 
     <groupId>org.juhewu</groupId>
     <artifactId>sms-spring-boot-project</artifactId>
-    <version>${revision}</version>
+    <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>sms-spring-boot-parent</module>
-        <module>sms-spring-boot-autoconfigure</module>
-        <module>sms-spring-boot-actuator</module>
+        <module>juhewu-sms-spring-boot-parent</module>
+        <module>juhewu-sms-spring-boot-autoconfigure</module>
+        <module>juhewu-sms-spring-boot-actuator</module>
         <module>sms-spring-boot-samples</module>
+        <module>juhewu-sms-spring-boot-starters</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -22,9 +23,11 @@
 
 
     <properties>
-        <maven_javadoc_version>3.0.1</maven_javadoc_version>
-        <maven_surefire_version>2.19.1</maven_surefire_version>
-        <revision>1.0-SNAPSHOT</revision>
+        <!--设置编码-->
+        <encoding>utf-8</encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <organization>
@@ -62,4 +65,53 @@
         </developer>
     </developers>
 
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-core</artifactId>-->
+<!--                <version>1.0</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-actuator</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-autoconfigure</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-starters</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-test</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-core</artifactId>-->
+<!--                <version>1.0</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
 </project>

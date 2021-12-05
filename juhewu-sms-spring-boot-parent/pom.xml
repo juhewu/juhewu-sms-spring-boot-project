@@ -5,12 +5,12 @@
     <parent>
         <artifactId>sms-spring-boot-project</artifactId>
         <groupId>org.juhewu</groupId>
-        <version>${revision}</version>
+        <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sms-spring-boot-parent</artifactId>
+    <artifactId>juhewu-sms-spring-boot-parent</artifactId>
     <packaging>pom</packaging>
     <name>Juhewu Sms Spring Boot :: Parent</name>
     <description>Juhewu Sms Spring Boot Parent</description>
@@ -23,7 +23,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
-        <sms.version>${revision}</sms.version>
+        <juhewu-sms-spring-boot.version>1.0-SNAPSHOT</juhewu-sms-spring-boot.version>
+        <juhewu-sms.version>1.0</juhewu-sms.version>
         <!-- Build args -->
         <argline>-server -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true
         </argline>
@@ -50,6 +51,84 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-spring-boot-actuator</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-spring-boot-autoconfigure</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-ali</artifactId>
+                <version>${juhewu-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-baidu</artifactId>
+                <version>${juhewu-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-tencent</artifactId>
+                <version>${juhewu-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-yunpian</artifactId>
+                <version>${juhewu-sms.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-ali-spring-boot-starter</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-tencent-spring-boot-starter</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-baidu-spring-boot-starter</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-yunpian-spring-boot-starter</artifactId>
+                <version>${juhewu-sms-spring-boot.version}</version>
+            </dependency>
+
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-starters</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.juhewu</groupId>-->
+<!--                <artifactId>juhewu-sms-spring-boot-test</artifactId>-->
+<!--                <version>${juhewu-sms.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+            <dependency>
+                <groupId>org.juhewu</groupId>
+                <artifactId>juhewu-sms-core</artifactId>
+                <version>${juhewu-sms.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
