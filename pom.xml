@@ -6,7 +6,7 @@
 
     <groupId>org.juhewu</groupId>
     <artifactId>juhewu-sms-spring-boot-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <modules>
         <module>juhewu-sms-spring-boot-parent</module>
         <module>juhewu-sms-spring-boot-autoconfigure</module>
@@ -64,6 +64,15 @@
             <url>https://github.com/juhewu</url>
         </developer>
     </developers>
+
+    <!-- 许可证信息 -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
     <!-- 发布管理信息 -->
     <distributionManagement>
         <repository>
