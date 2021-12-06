@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>sms-spring-boot-project</artifactId>
+        <artifactId>juhewu-sms-spring-boot-project</artifactId>
         <groupId>org.juhewu</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -106,23 +106,6 @@
                 <version>${juhewu-sms-spring-boot.version}</version>
             </dependency>
 
-
-<!--            <dependency>-->
-<!--                <groupId>org.juhewu</groupId>-->
-<!--                <artifactId>juhewu-sms-spring-boot-starters</artifactId>-->
-<!--                <version>${juhewu-sms.version}</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
-
-<!--            <dependency>-->
-<!--                <groupId>org.juhewu</groupId>-->
-<!--                <artifactId>juhewu-sms-spring-boot-test</artifactId>-->
-<!--                <version>${juhewu-sms.version}</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
-
             <dependency>
                 <groupId>org.juhewu</groupId>
                 <artifactId>juhewu-sms-core</artifactId>
@@ -131,40 +114,6 @@
 
         </dependencies>
     </dependencyManagement>
-
-    <repositories>
-        <repository>
-            <id>ali-maven</id>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-        </repository>
-
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestone</id>
-            <name>Spring Milestone</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-snapshot</id>
-            <name>Spring Snapshot</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <!-- Used for packaging NOTICE & LICENSE to each sub-module jar-->
