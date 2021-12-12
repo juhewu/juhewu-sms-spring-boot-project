@@ -26,7 +26,7 @@ public class SmsAutoConfiguration {
     /**
      * 内存中的短信账户
      *
-     * @return
+     * @return InMemorySmsAccountRepository
      */
     @Bean
     @ConditionalOnMissingBean(SmsAccountRepository.class)
@@ -37,8 +37,8 @@ public class SmsAutoConfiguration {
     /**
      * 配置文件中的短信账户
      *
-     * @param smsAccessProperties
-     * @return
+     * @param smsAccessProperties 短信账户
+     * @return PropertiesSmsAccountLocator
      */
     @Bean
     public PropertiesSmsAccountLocator propertiesSmsAccountLocator(SmsAccessProperties smsAccessProperties) {
@@ -48,8 +48,8 @@ public class SmsAutoConfiguration {
     /**
      * 短信账户定位器，包括所有的短信定位器
      *
-     * @param smsAccountLocators
-     * @return
+     * @param smsAccountLocators 短信账户定位器
+     * @return SmsAccountLocator
      */
     @Bean
     @Primary
@@ -61,8 +61,8 @@ public class SmsAutoConfiguration {
     /**
      * 短信渠道
      *
-     * @param smsChannels
-     * @return
+     * @param smsChannels 短信渠道集合
+     * @return SmsChannelFactory
      */
     @Bean
     public SmsChannelFactory smsChannelStrategy(List<SmsChannel> smsChannels) {

@@ -76,7 +76,8 @@ public class SmsEndpoint {
     /**
      * 根据id获取短信账户
      *
-     * @return
+     * @param key key
+     * @return smsAccount
      */
     @ReadOperation
     public SmsAccount getSmsAccountByKey(@Selector String key) {

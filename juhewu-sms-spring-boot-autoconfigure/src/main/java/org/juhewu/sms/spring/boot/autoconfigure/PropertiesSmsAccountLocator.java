@@ -14,7 +14,7 @@ import org.juhewu.sms.SmsAccountLocator;
  */
 public class PropertiesSmsAccountLocator implements SmsAccountLocator {
 
-    private SmsAccessProperties smsAccessProperties;
+    private final SmsAccessProperties smsAccessProperties;
 
     public PropertiesSmsAccountLocator(SmsAccessProperties smsAccessProperties) {
         this.smsAccessProperties = smsAccessProperties;
@@ -23,7 +23,7 @@ public class PropertiesSmsAccountLocator implements SmsAccountLocator {
     /**
      * 所有短信账户
      *
-     * @return
+     * @return smsAccounts
      */
     @Override
     public List<SmsAccount> getSmsAccounts() {
@@ -33,8 +33,8 @@ public class PropertiesSmsAccountLocator implements SmsAccountLocator {
     /**
      * 根据短信账户id获取短信账户
      *
-     * @param id
-     * @return
+     * @param id id
+     * @return smsAccount
      */
     @Override
     public SmsAccount getSmsAccount(String id) {

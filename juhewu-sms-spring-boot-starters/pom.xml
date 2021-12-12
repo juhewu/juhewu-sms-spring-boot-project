@@ -5,13 +5,15 @@
     <parent>
         <artifactId>juhewu-sms-spring-boot-parent</artifactId>
         <groupId>org.juhewu</groupId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
         <relativePath>../juhewu-sms-spring-boot-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>juhewu-sms-spring-boot-starters</artifactId>
     <packaging>pom</packaging>
+    <artifactId>juhewu-sms-spring-boot-starters</artifactId>
+    <name>Juhewu Sms Spring Boot :: Starters</name>
+    <description>Juhewu Sms Spring Boot Starters</description>
 
     <modules>
         <module>juhewu-sms-ali-spring-boot-starter</module>

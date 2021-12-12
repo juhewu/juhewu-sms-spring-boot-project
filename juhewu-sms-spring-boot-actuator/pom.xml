@@ -5,36 +5,23 @@
     <parent>
         <artifactId>juhewu-sms-spring-boot-parent</artifactId>
         <groupId>org.juhewu</groupId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
         <relativePath>../juhewu-sms-spring-boot-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>juhewu-sms-spring-boot-actuator</artifactId>
     <packaging>jar</packaging>
+    <artifactId>juhewu-sms-spring-boot-actuator</artifactId>
     <name>Juhewu Sms Spring Boot :: Actuator</name>
     <description>Juhewu Sms Spring Boot Actuator</description>
 
     <dependencies>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
-<!--            <optional>true</optional>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator-autoconfigure</artifactId>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-autoconfigure</artifactId>-->
-<!--            <optional>true</optional>-->
-<!--        </dependency>-->
 
         <!-- Sms autoconfigure -->
         <dependency>
